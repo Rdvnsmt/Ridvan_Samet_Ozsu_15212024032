@@ -8,9 +8,6 @@ struct Node{
 	Node* next;
 };
 
-void Undo(Node* myNode) {
-    
-}
 void displayList(Node* myNode) {
 	if (myNode == NULL) {
 		cout << "Your List is empty" << endl;
