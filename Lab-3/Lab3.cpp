@@ -34,6 +34,7 @@ void AddSong(string Title, string Artist,int rating1,int rating2,int rating3) {
         lastSong->next = newSong;
         newSong->prev = lastSong;
     }
+    cout << endl;
 }
 
 void removeCurrent() {
