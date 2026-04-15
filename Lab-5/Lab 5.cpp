@@ -65,21 +65,13 @@ void reverseQueue(Queue* q) {
     Stack tempStack;
 
     initStack(&tempStack);
-    /*for (int i = 0; i < 5; i++) {
-        push(&tempStack, dequeue(q));
-    }
-    for (int i = 0; i < 5; i++) {
-        enqueue(q, pop(&tempStack));
-    }*/
-
+    
     while (!isQueueEmpty(q)) {
         push(&tempStack, dequeue(q));
     }
     while (isStackEmpty(&tempStack)) {
         enqueue(q, pop(&tempStack));
     }
-    
-    
 }
 // ==========================================
 
