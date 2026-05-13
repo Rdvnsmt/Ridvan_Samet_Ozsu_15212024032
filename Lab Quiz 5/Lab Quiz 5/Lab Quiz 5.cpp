@@ -12,7 +12,7 @@ int main()
     Sensor Temp;
     string Student_Id;
     long long int IdInt;
-    int firstTemp = 0;
+    float firstTemp = 0;
     cout << "Enter your Student id: ";
     cin >> Student_Id;
     IdInt = stoll(Student_Id);
